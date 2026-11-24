@@ -304,10 +304,8 @@
   .builds-intro strong{color:var(--gold-light);font-weight:500;}
   .builds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
   .build-card{background:var(--abyss);display:flex;flex-direction:column;}
-  .builds-grid .build-card:nth-child(1){transition-delay:0ms;}
-  .builds-grid .build-card:nth-child(2){transition-delay:100ms;}
-  .builds-grid .build-card:nth-child(3){transition-delay:200ms;}
-  .builds-grid .build-card:nth-child(4){transition-delay:300ms;}
+  .builds-grid .build-card:nth-child(3n + 2){transition-delay:100ms;}
+  .builds-grid .build-card:nth-child(3n){transition-delay:200ms;}
   .build-browser-bar{
     display:flex;align-items:center;gap:6px;padding:11px 14px;
     background:var(--tidepool2);border-bottom:1px solid var(--border);
@@ -944,7 +942,7 @@
 <section class="builds" id="builds">
   <div class="section-eyebrow">Off The Clock</div>
   <h2 class="section-title">Things I build<br><em>just because.</em></h2>
-  <p class="builds-intro">I'm a gamer first, and I like shipping things. When a game is missing a tool I wish existed, I usually <strong>build it myself</strong> and keep polishing it until I'd actually want to use it.</p>
+  <p class="builds-intro">I'm a gamer first, and I like shipping things. If I can't find a tool for a game I play or hardware I use, I usually <strong>build it myself</strong> and keep polishing it until I'd actually want to use it.</p>
 
   <div class="builds-grid">
 
@@ -1013,14 +1011,52 @@
         <span class="build-url">github.com/caioklein/AX206-LCD-Screen</span>
       </div>
       <div class="build-frame">
-        <img class="build-shot" src="https://raw.githubusercontent.com/caioklein/AX206-LCD-Screen/main/dark_casting.png" alt="AX206 LCD Screen project screenshot">
+        <img class="build-shot" src="https://raw.githubusercontent.com/caioklein/AX206-LCD-Screen/main/dark_casting.png" alt="AX206 LCD Screen Manager casting media to a round USB display">
       </div>
       <div class="build-body">
         <div class="build-name">AX206 LCD Screen</div>
         <div class="build-tagline">Python Utility · USB LCD Display</div>
-        <p class="build-desc">A Python-based alternative to the original AX206 LCD utility, created to replace the vendor's poorly translated, resource-heavy software with a cleaner way to work with the display.</p>
+        <p class="build-desc">I built a Windows app for the little round USB screen on my PC's cooler. It casts images, GIFs, and videos live or saves them to the display so they can play with the PC off. It also lets me rotate and reposition the picture.</p>
         <div class="build-tags"><span class="tag">Python</span><span class="tag">Windows</span><span class="tag">USB LCD</span><span class="tag">Hardware Utility</span></div>
         <a class="build-link" href="https://github.com/caioklein/AX206-LCD-Screen" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="build-card">
+      <div class="build-browser-bar">
+        <span class="build-dot" style="background:#ff5f57;"></span>
+        <span class="build-dot" style="background:#febc2e;"></span>
+        <span class="build-dot" style="background:#28c840;"></span>
+        <span class="build-url">github.com/caioklein/Camelas-WoW-Companion</span>
+      </div>
+      <div class="build-frame">
+        <img class="build-shot" src="https://raw.githubusercontent.com/caioklein/Camelas-WoW-Companion/main/docs/screenshots/dungeon-maps.png" alt="Camelas WoW Companion showing the Deadmines map and route controls" loading="lazy">
+      </div>
+      <div class="build-body">
+        <div class="build-name">Camelas WoW Companion</div>
+        <div class="build-tagline">Companion App · World of Warcraft Forever</div>
+        <p class="build-desc">A Windows companion app that works with in-game addons. It shows dungeon routes and tracks your position as you play, detects fishing bites, and uses Auctionator data to chart price history and compare crafting costs with expected sale prices.</p>
+        <div class="build-tags"><span class="tag">Windows</span><span class="tag">WoW Addons</span><span class="tag">Dungeon Maps</span></div>
+        <a class="build-link" href="https://github.com/caioklein/Camelas-WoW-Companion" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="build-card">
+      <div class="build-browser-bar">
+        <span class="build-dot" style="background:#ff5f57;"></span>
+        <span class="build-dot" style="background:#febc2e;"></span>
+        <span class="build-dot" style="background:#28c840;"></span>
+        <span class="build-url">github.com/caioklein/WaiveGK6XPlus</span>
+      </div>
+      <div class="build-frame">
+        <img class="build-shot" src="https://raw.githubusercontent.com/caioklein/WaiveGK6XPlus/main/docs/assets/waivegk6xplus-banner.svg" alt="WaiveGK6XPlus illustration of an RGB keyboard and its customization controls" loading="lazy">
+      </div>
+      <div class="build-body">
+        <div class="build-name">WaiveGK6XPlus</div>
+        <div class="build-tagline">Windows Utility · 96XS-RGB Keyboard</div>
+        <p class="build-desc">A native Windows alternative to the GK6+ utility for the 96XS-RGB keyboard. It lets me paint per-key lighting, remap keys and Fn layers, record macros, and save profiles locally or to the keyboard's onboard memory.</p>
+        <div class="build-tags"><span class="tag">WPF</span><span class="tag">.NET 10</span><span class="tag">Keyboard Customization</span></div>
+        <a class="build-link" href="https://github.com/caioklein/WaiveGK6XPlus" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
       </div>
     </div>
 
